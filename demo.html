@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Front Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #111;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 40px;
+    padding: 0px; /* Adjust as per your logo's height */
+}
+
+.navbar-links .btn {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.navbar-links .btn:hover {
+    background-color: #ff0a16;
+}
+
+.hero {
+    background-image: url('hero_background.jpg');
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 1300px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    align-items: start;
+}
+
+.hero h1 {
+    font-size: 3.25rem;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 20px;
+    line-height: 1.3em;
+    width: 45%;
+    text-align: left;
+}
+
+.btn-red {
+    background-color: #e50914;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.movies-section, .comedy-section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    width: 20%;
+}
+
+.movie-categories {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.movie-category {
+    flex: 1;
+    text-align: center;
+}
+
+.movie-category img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.recently-added-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recently-added-item {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recently-added-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movie {
+    width: calc(25% - 20px); /* Adjust as per your design */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.movie:hover img {
+    transform: scale(1.1);
+}
+
+.movie p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.comedy-section{
+    width: 100%;
+    max-width: 1300px;
+    margin-left: 50px;
+}
+h2{
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+}
+.grid-container {
+    max-width: 1300px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            padding-bottom: 10px;
+}
+        .grid-item {
+            width: 100%;
+            height: 200px; 
+            overflow: hidden; 
+        }
+        .img1 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+        #logo 
+        { 
+            height: 200px; 
+            width: 400px; 
+            overflow: hidden; 
+        }
+
+</style>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+               
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Logonetflix.png/1200px-Logonetflix.png">
+            
+            </div>
+            <div class="navbar-links">
+                <a href="#" class="btn">Join Now</a>
+                <a href="#" class="btn">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Movies</h1>
+            <p>Movies move us like nothing else can, whether they’re scary, funny, dramatic, romantic or anywhere in-between. So many titles, so much to experience.
+            </p>
+        </div>
+    </section>
+
+    </section>
+        <section class="comedy-section">
+        <div class="container">
+            <p>Your Next Watch</p>
+            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbfwx8U6qb4kFvA5Xum_V-f9zqNB1hBf9TdnBABA8m-VPMsnnC8OUJxeJI485vlhcQc3J1uOBRek1GmxdR-WimecUrpyb2VWrfA3MC18lBLytR4gB0hhig-Z0rjK08TU-0XjHA5v4BQOw4e5TlBuwPQXy-8Jqeor4RuvsJ8o688WpFkx8PADzDGS3iONJ2Optdo5WM2FmBT_Y4kh3DPJmtnFoop_OpcRF4vGRzrSs8Pop3OlVD8zVlCTGntSi4WYksWffpWAU6HObyWUuEbianXw37NUNjhb5SgAYoIEDevohr9klm6s9RaanjeXO11RaJM2umZ7dJ8JstaqIEyatOg.jpg?r=f0a">
+            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeuFcTcnEKcK83NxYvsmc9O-gs-3mMZ0g5pOLlcmjcrDjr9llUAti7oILAWeEyV2denHZ7Af2_gGfwkeJRonYFzQx0wD2WlqojITFw6R6egaFGwQC2J1FIE4EYbUCD7KHgVMKct2LjCbt1Rt3-ikiMQOsP2vkVcBbI8.jpg?r=033">
+            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdqZV7jUhA_u2ugZ4W2FZ47yAYM8wQZKSxK0IkfOdQ8MO-TJLaKwrbwrkJ5_Of_qOdtE7BOEvN3VcYV72-sNhwe-bW2ACpMW1u3w7S0nE-DvxoFKiEkJArZR3txx055Xx7hCclrGDM67slZsuNxKrM8Dii72pMKAMhjAwH31jyUJ_Hbp5yujIIMxaQXbnr1X6PaQdU-THdmlVk8tJ1u7AsntQuC8dTRi_sZc-1BOp4TYzlm9KBQ86zTYnc0SkFhzjB9cJDqFKI_FU12qu5tGh3odoHjVZcSPaU8aj9FK_LWDXYiMKX_9A8e-Y-p6FIQZ1QTHem3gj_x0zNqim5mYdBQsZqrpGhK4zENh47V741MlQs76YPI.jpg?r=dc3">
+            <img src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeU3lvQ6ay8iwKRP_iABWAXFJ6QHLsYtiYcoGHdnQ41Sf3uZ4hmqaEv5km-jaoHXN1WZEkhBU1CydSLjvcX4zi2igf37JHVyWOO492WUItuC8Ohyy3SjTOxfXGhDKODTG1IhkdbMWISXpRUyFaMcqBCFxY4w59HSgDg.jpg?r=7dd">
+        </div>
+    </section>
+
+    <!-- disney -->
+    <section class="disney">
+        <div class="container">
+            <h2>Comedy Movies</h2>
+            <div class="grid-container">
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7599/677599-v" alt="Image 1" class="img1"></div>
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/6445/1710929926445-v" alt="Image 2" class="img1"></div>
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/8537/568537-v" alt="Image 3" class="img1"></div>
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2979/1432979-v-36cfe251ff8a" alt="Image 4" class="img1"></div>
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/61/1650061-v-a6c0dacefe4c" alt="Image 5" class="img1"></div>
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7803/1712209007803-v" alt="Image 6" class="img1"></div>
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3649/1711465823649-v" alt="Image 7" class="img1"></div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7395/1713429987395-v" alt="Image 1" class="img1"></div>
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5616/1355616-v-08a190817b7b" alt="Image 2" class="img1"></div>
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1229/1710936671229-v" alt="Image 3" class="img1"></div>
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9962/1710936549962-v" alt="Image 4" class="img1"></div>
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2438/632438-v" alt="Image 5" class="img1"></div>
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/old_images/vertical/MOVIE/6211/1000036211/1000036211-v" alt="Image 6" class="img1"></div>
+                <div class="grid-item"><img src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5002/705002-v" alt="Image 7" class="img1"></div>
+            </div>
+</body>
+</html>
